@@ -1,0 +1,56 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header
+{
+    height: 8vh;
+    background-color: #12802C;
+    display: flex;
+    align-items: center;   
+}
+
+.header a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    margin: 1vh;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.title
+{
+    display: flex;
+    align-items: center;
+    margin: 5vh;
+    justify-content: center;
+}
+
+.title-text
+{
+    margin: 4vh;
+    font-size: 3vh;
+}
+
+.title-text h2
+{
+    text-align: right;
+}
+
+.title-img img
+{
+    height: 40vh;
+    border: 3px solid lightgray;
+    border-radius: 20vh;
+    box-shadow: 5px 5px 5px 3px lightgray;
+}
+
