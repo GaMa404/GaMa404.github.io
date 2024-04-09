@@ -87,9 +87,138 @@ header img
     font-family: "Signika Negative", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 2vh;
+    font-size: 2.5vh;
     text-align: center;
-    padding: 8vh;
-    padding-left: 45vh;
-    padding-right: 45vh;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    padding-left: 40vh;
+    padding-right: 40vh;
+}
+
+.about p
+{    
+    margin: 2vh;
+}
+
+.container-abilities
+{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vh;
+    height: 25vh;
+}
+
+.abilities
+{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 50vh);
+    margin-top: -10vh;
+    background-color: white;
+    border-radius: 3vh;
+    padding: 3vh;
+    box-shadow: 0px 5px 10px gray;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    height: fit-content;
+}
+
+.item-title
+{
+    font-weight: bold;
+    font-size: 3vh;
+    margin: 2vh;
+}
+
+.item-content
+{
+    margin: 3vh;
+    font-size: 2vh;
+}
+
+#item1
+{
+    border-right: 2px solid lightgray;
+}
+
+#item3
+{
+    border-left: 2px solid lightgray;
+}
+
+.container-projects
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2.5vh;
+    padding-top: 4vh;
+}
+
+.projects
+{
+    display: grid;
+    grid-template-columns: repeat(3, 40vh);
+    grid-template-rows: repeat(2, 35vh);
+    justify-content: center;
+    padding: 3vh;
+}
+
+.project-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+    margin: 1vh;
+    box-shadow: 0px 5px 10px gray;
+    cursor:pointer;
+}
+
+.project-box h4
+{
+    background-color: white;
+    border-radius: 2vh;
+    padding: 1vh;
+}
+
+#project1
+{
+    background-image: url(image/bank.jpg);
+}
+
+#project2
+{
+    background-image: url(image/gym.jpg);
+}
+
+#project3
+{
+    background-image: url(image/curso.jpg);
+}
+
+#project4
+{
+    background-image: url(image/bank.jpg);
+}
+
+#project5
+{
+    background-image: url(image/bank.jpg);
+}
+
+#project6
+{
+    background-image: url(image/bank.jpg);
+}
+
+#project1:hover, #project2:hover, #project3:hover, #project4:hover, #project5:hover, #project6:hover
+{
+    transform: scale(0.97);
+    transition: transform .2s;
 }
