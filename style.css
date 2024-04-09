@@ -45,7 +45,7 @@ header img
     margin-top: 8vh;
     background-image: url(image/background.PNG);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 80vh;
     background-position: bottom;
     height: 80vh;  
 }
@@ -75,7 +75,8 @@ header img
 {
     height: 20vh;
     border-radius: 10vh;
-    box-shadow: 8px 7px 10px gray;
+    box-shadow: 3px 7px 10px gray;
+    border: 2px solid gray;
 }
 
 .container-about
@@ -180,41 +181,53 @@ header img
     cursor:pointer;
 }
 
-.project-box h4
+.project-box a
 {
-    background-color: white;
+    background-color: transparent;
     border-radius: 2vh;
     padding: 1vh;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 15vh;
+    font-weight: bold;
+    font-size: 4vh;
+    text-shadow: 3px 3px 2px black;
 }
 
 #project1
 {
     background-image: url(image/bank.jpg);
+    background-size: cover;
 }
 
 #project2
 {
     background-image: url(image/gym.jpg);
+    background-size: cover;
 }
 
 #project3
 {
     background-image: url(image/curso.jpg);
+    background-size: cover;
 }
 
 #project4
 {
-    background-image: url(image/bank.jpg);
+    background-image: url(image/imc.jpg);
+    background-size: cover;
 }
 
 #project5
 {
-    background-image: url(image/bank.jpg);
+    background-image: url(image/series.jpg);
+    background-size: cover;
 }
 
 #project6
 {
-    background-image: url(image/bank.jpg);
+    background-image: url(image/lampada.jpg);
+    background-size: cover;
 }
 
 #project1:hover, #project2:hover, #project3:hover, #project4:hover, #project5:hover, #project6:hover
