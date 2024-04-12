@@ -76,7 +76,7 @@ header img
     height: 20vh;
     border-radius: 10vh;
     box-shadow: 3px 7px 10px gray;
-    border: 2px solid gray;
+    border-top: 2px solid gray;
 }
 
 .container-about
@@ -261,6 +261,12 @@ header img
     margin-top: 2vh;
 } 
 
+.contact-images
+{
+    height: 12vh;
+    padding-top: 1vh;
+}
+
 .link-image
 {
     display: inline-block;
@@ -270,22 +276,100 @@ header img
     background-size: 5vh;
     background-repeat: no-repeat;
     background-position: center;
-    border: 2px solid white;
     margin: 2vh;
+    border: 2px solid black;
 }
 
 .link-image:hover
 {
-    transform: scale(0.95);
+    transform: scale(1.1);
     transition: transform .2s;
 }
 
 #whatsapp
 {
-    background-image: url(image/whatsapp-white.png);
+    background-image: url(image/whatsapp.png);
 }
 
 #email
 {
-    background-image: url(image/mail-white.png);
+    background-image: url(image/mail.png);
 }
+
+footer
+{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00BF63;
+}
+
+.gamma-footer
+{
+    display: flex;
+    justify-content: center;
+}
+
+footer img
+{
+    height: 10vh;
+    filter: invert(100%);
+}
+
+.social-medias
+{
+    display: flex;
+    justify-content: center;
+}
+
+.social
+{
+    display: inline-block;
+    height: 6.5vh;
+    width: 6.5vh;
+    border-radius: 4vh;
+    background-size: 3.5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2vh;
+    border: 2px solid white;
+    margin-top: 5vh;
+}
+
+#social-linkedin
+{
+    background-image: url(image/social-linkedin.png);
+}
+
+#social-linkedin:hover
+{
+    background-image: url(image/social-linkedin-green.png);
+}
+
+#social-github
+{
+    background-image: url(image/social-github.png);
+}
+
+#social-github:hover
+{
+    background-image: url(image/social-github-green.png);
+}
+
+#social-instagram
+{
+    background-image: url(image/social-insta.png);
+}
+
+#social-instagram:hover
+{
+    background-image: url(image/social-instagram-green.png);
+}
+
+.social:hover
+{
+    background-color: white;
+}
+
+
