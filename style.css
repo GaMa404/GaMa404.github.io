@@ -33,7 +33,6 @@ header img
 
 .social_links
 {
-
     width: 90vh;
     text-align: right;
 }
@@ -91,7 +90,7 @@ header img
     font-size: 2.5vh;
     text-align: center;
     padding-top: 10vh;
-    padding-bottom: 20vh;
+    padding-bottom: 10vh;
     padding-left: 40vh;
     padding-right: 40vh;
 }
@@ -99,6 +98,20 @@ header img
 .about p
 {    
     margin: 2vh;
+}
+
+.about-fatec
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
+    font-size: 2.5vh;
+}
+
+.link-fatec, .link-fatec a
+{
+    margin-top: 5vh;
+    color: white;
 }
 
 .container-abilities
@@ -172,7 +185,6 @@ header img
 
 .git-link
 {
-    text-decoration: none;
     color: #00BF63;
 }
 
