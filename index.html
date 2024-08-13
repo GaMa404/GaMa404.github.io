@@ -16,11 +16,11 @@
         </div>
 
         <div class="social_links">
-            <a href="https://github.com/GaMa404"> <img src="image/github.png"></a>
-            <a href="https://br.linkedin.com/in/leonardoluzetti"> <img src="image/linkedin.png"></a>
+            <a href="https://github.com/GaMa404" target="_blank"> <img src="image/github.png"></a>
+            <a href="https://br.linkedin.com/in/leonardoluzetti" target="_blank"> <img src="image/linkedin.png"></a>
         </div>
     </header>
-    
+
     <div class="container">
         <div class="title-text">
             <h1>Leonardo Fernando Luzetti</h1>
@@ -29,6 +29,9 @@
         <div class="my-picture">
             <img src="image/leo.jpeg">
         </div>
+    </div>
+  
+    <div class="toggleTheme">
     </div>
 
     <div class="container-about">
@@ -46,7 +49,7 @@
                 oferece cursos para formação de tecnólogos. O curso em Desenvolvimento de Software Multiplataforma é disponibilizado no período matutino
                 com uma duração de 3 anos (6 semestres), sendo o último semestre EAD.
             </p>
-            <p class="link-fatec"><a href="https://fatecjahu.edu.br/"> Saiba mais</a></p>
+            <p class="link-fatec"><a href="https://fatecjahu.edu.br/" target="_blank"> Saiba mais</a></p>
         </div>
     </div>
 
@@ -77,30 +80,30 @@
 
     <div class="container-projects">
         <h2>Meus Projetos</h2>
-        <p> Alguns projetos que eu desenvolvi. Para ver mais, acesse o meu <a class="git-link" href="https://github.com/GaMa404"> GitHub</a>!</p>
+        <p> Alguns projetos que eu desenvolvi. Para ver mais, acesse o meu <a class="git-link" href="https://github.com/GaMa404" target="_blank"> GitHub</a>!</p>
 
         <div class="projects">
-            <a href="https://github.com/GaMa404/AppBancoDigital" id="project1"> 
+            <a href="https://github.com/GaMa404/AppBancoDigital" id="project1" target="_blank"> 
                 <h4> Banco Digital </h4>
             </a>
 
-            <a href="https://github.com/FLOFFS-TECNOLOGIA/AppStarFitness" id="project2">
+            <a href="https://github.com/FLOFFS-TECNOLOGIA/AppStarFitness" id="project2" target="_blank">
                 <h4> Gerenciamento de Academia </h4>
             </a>
 
-            <a href="https://github.com/GaMa404/AppGuiaCurso" id="project3">
+            <a href="https://github.com/GaMa404/AppGuiaCurso" id="project3" target="_blank">
                 <h4> Guia Curso </h4>
             </a>
 
-            <a href="https://github.com/GaMa404/imc_react" id="project4">
+            <a href="https://github.com/GaMa404/imc_react" id="project4" target="_blank">
                 <h4> Calculadora IMC </h4>
             </a>
 
-            <a href="https://github.com/GaMa404/AppPatchongaflixV2" id="project5">
+            <a href="https://github.com/GaMa404/AppPatchongaflixV2" id="project5" target="_blank">
                 <h4> Aplicativo Streaming </h4>
             </a>
 
-            <a href="https://github.com/GaMa404/AppLanterna" id="project6">
+            <a href="https://github.com/GaMa404/AppLanterna" id="project6" target="_blank">
                 <h4> Aplicativo Lanterna</h4>
             </a>
         </div>
@@ -111,8 +114,8 @@
             <h3> Contate-me!</h3>
             <p> Caso tenha interesse ou alguma dúvida, entre em contato.</p>
             <div class="contact-images">
-                <a href="https://wa.me/5514996390951"><div id="whatsapp" class="link-image"></div></a>
-                <a href="mailto:luzettileonardo@gmail.com"><div id="email" class="link-image"></div></a>
+                <a href="https://wa.me/5514996390951" target="_blank"><div id="whatsapp" class="link-image"></div></a>
+                <a href="mailto:luzettileonardo@gmail.com" target="_blank"><div id="email" class="link-image"></div></a>
             </div>
         </div>
     </div>
@@ -123,27 +126,12 @@
         </div>
 
         <div class="social-medias">
-            <a href="https://br.linkedin.com/in/leonardoluzetti"><div id="social-linkedin" class="social"></div></a> 
-            <a href="https://github.com/gama404"><div id="social-github" class="social"></div></a>
-            <a href="https://instagram.com/gamaa404"><div id="social-instagram" class="social"></div></a>
+            <a href="https://br.linkedin.com/in/leonardoluzetti" target="_blank"><div id="social-linkedin" class="social"></div></a> 
+            <a href="https://github.com/gama404" target="_blank"><div id="social-github" class="social"></div></a>
+            <a href="https://instagram.com/gamaa404" target="_blank"><div id="social-instagram" class="social"></div></a>
         </div>
     </footer>
 
-    <script>
-        // o 8 se refere a setembro, pois os meses começam no index 0
-        const birthday = new Date(Date.UTC(2005, 8, 28));
-        const today = new Date();
-
-        let age = today.getFullYear() - birthday.getUTCFullYear();
-        const month = today.getMonth() - birthday.getUTCMonth();
-        const day = today.getDate() - birthday.getUTCDate();
-
-        if (month < 0 || month == 0 && day < 0) 
-        {
-            age--;
-        }
-
-        document.getElementById('age').innerHTML = age;
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
