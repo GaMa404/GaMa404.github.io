@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 *
 {
@@ -7,11 +9,59 @@
     box-sizing: border-box;
 }
 
+/* definindo cores padrão para o tema branco */
+:root {
+    /* header */
+    --bg-header: white;
+
+    /* body */
+    --bg-body: white;
+    --txt-body: black;
+
+    /* toggle */
+    --border-toggle: 0.2vh solid white;
+    --bg-toggle: black;
+    --bg-image-toggle: url(image/moon-white.svg);
+
+    /* habilidades */
+    --bg-abl: white;
+
+    /* contato */
+    --bg-contact: white;
+    --txt-contact: black;
+}
+
+body
+{
+    height: fit-content;
+    background-color: var(--bg-body);
+    transition: background-color 0.3s ease;
+    color: var(--txt-body);
+}
+
+body.dark
+{
+    --bg-body: black;
+    --txt-body: white;
+}
+
 header
 {
     display: flex;
-    padding: 1vh;
+    padding: 2vh;
     justify-content: center;
+    position: fixed;
+    width:100vw;
+    top: 0vh;
+    border-bottom: 0.2vh solid lightgray;
+    z-index: 1;
+    background-color: var(--bg-header);
+    transition: background-color 0.3s ease;
+}
+
+body.dark header {
+    --bg-header: black;
+    --txt-header: white;
 }
 
 .gamma-letter
@@ -22,6 +72,7 @@ header
 #gamma
 {
     height: 5vh;
+    cursor: pointer;
 }
 
 header img
@@ -29,6 +80,31 @@ header img
     height: 5vh;
     width: 5vh;
     margin: 1vh;
+}
+
+.sections
+{
+    display: flex;
+    width: 200vh;
+    justify-content: center;
+    text-align: center;
+    gap: 10vh; 
+    align-items: center;
+}
+
+.section-items
+{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vh;
+    cursor: pointer;
+}
+
+.section-items:hover
+{
+    color: #00BF63;
+    transition: 0.3s;
 }
 
 .social_links
@@ -41,12 +117,12 @@ header img
 {
     display: flex;
     flex-direction: column;
-    margin-top: 8vh;
-    background-image: url(image/background.PNG);
+    margin-top: 15vh;
+    background-image: url(image/background-transparent.png);
     background-repeat: no-repeat;
     background-size: 80vh;
     background-position: bottom;
-    height: 80vh;  
+    height: 80vh;
 }
 
 .title-text
@@ -68,13 +144,14 @@ header img
     margin: 3vh;
     display: flex;
     justify-content: center;
+    padding-bottom: 1.5vh;
 }
 
 .my-picture img
 {
     height: 20vh;
     border-radius: 10vh;
-    box-shadow: 3px 7px 10px gray;
+    box-shadow: 0.3vh 0.7vh 1vh gray;
     border-top: 2px solid gray;
 }
 
@@ -128,15 +205,20 @@ header img
     text-align: center;
     grid-template-columns: repeat(3, 50vh);
     margin-top: -10vh;
-    background-color: white;
+    background-color: var(--bg-abl);
     border-radius: 3vh;
     padding: 3vh;
-    box-shadow: 0px 5px 10px gray;
+    box-shadow: 0px 0.5vh 1vh rgba(46, 46, 46, 0.616);
     font-family: "Signika Negative", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     height: fit-content;
 }
+
+body.dark .abilities
+{
+    --bg-abl: black;
+} 
 
 .item-title
 {
@@ -153,12 +235,12 @@ header img
 
 #item1
 {
-    border-right: 2px solid lightgray;
+    border-right: 0.2vh solid rgba(46, 46, 46, 0.616);
 }
 
 #item3
 {
-    border-left: 2px solid lightgray;
+    border-left: 0.2vh solid rgba(46, 46, 46, 0.616);
 }
 
 .container-projects
@@ -195,11 +277,11 @@ header img
     align-items: center;
     text-decoration: none;
     color: white;
-    text-shadow: 2px 2px 0px black;
+    text-shadow: 0.2vh 0.2vh 0px black;
     font-size: 3vh;
     margin: 0.8vh;
     border-radius: 2vh;
-    box-shadow: 0px 5px 10px gray;
+    box-shadow: 0px 0.5vh 1vh rgb(44, 44, 44);
 }
 
 #project1
@@ -242,6 +324,7 @@ header img
 {
     transform: scale(0.97);
     transition: transform .2s;
+    z-index: 0;
 }
 
 .container-contact
@@ -261,11 +344,17 @@ header img
     margin: 3vh;
     margin-top: -10vh;
     padding: 2vh;
-    background-color: white;
+    background-color: var(--bg-contact);
     border-radius: 2vh;
-    color: black;
-    box-shadow: 1px 5px 10px rgb(2, 85, 2);
-    border-top: 1px solid lightgray;
+    color: var(--txt-contact);
+    box-shadow: 0.1vh 0.5vh 1vh rgb(75, 66, 66);
+    border-top: 0.1vh solid rgba(68, 68, 68, 0.616);
+}
+
+body.dark .contact
+{
+    --bg-contact: black;
+    --txt-contact: white;
 }
 
 .contact h3
@@ -289,7 +378,7 @@ header img
     background-repeat: no-repeat;
     background-position: center;
     margin: 2vh;
-    border: 2px solid black;
+    border: 0.2vh solid black;
 }
 
 .link-image:hover
@@ -327,6 +416,7 @@ footer img
 {
     height: 10vh;
     filter: invert(100%);
+    cursor: pointer;
 }
 
 .social-medias
@@ -345,7 +435,7 @@ footer img
     background-repeat: no-repeat;
     background-position: center;
     margin: 2vh;
-    border: 2px solid white;
+    border: 0.2vh solid white;
     margin-top: 5vh;
 }
 
@@ -386,9 +476,9 @@ footer img
 
 .toggleTheme
 {
-    border: 2px solid #39e994;
-    background-color: white;
-    background-image: url(image/theme-green.svg);
+    border: var(--border-toggle);
+    background-color: var(--bg-toggle);
+    background-image: var(--bg-image-toggle);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 5vh;
@@ -399,6 +489,14 @@ footer img
     position: fixed;
     bottom: 3.5vh;
     right: 2vh;
+    opacity: 50%;
+}
+
+body.dark .toggleTheme
+{
+    --bg-toggle: white;
+    --bg-image-toggle: url(image/theme-green.svg);
+    --border-toggle: 0.2vh solid #00BF63;
 }
 
 .toggleTheme:hover
@@ -406,4 +504,5 @@ footer img
     transform: scale(0.97);
     transition: transform .2s;
     cursor: pointer;
+    opacity: 100%;
 }
