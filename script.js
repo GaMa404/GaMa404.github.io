@@ -24,15 +24,19 @@ document.getElementById('gamma').addEventListener('click', function(){
     window.scrollTo({top: 0, behavior: "smooth"});
 })
 
+// utilizando vh convertido em pixels para manter uma relatividade na scrollagem
+const vh = window.innerHeight;
+const scrollAmountAbout = 88 * (vh / 100);
+const scrollAmountProject = 190 * (vh / 100);
 
 document.getElementById('scrollAbout').addEventListener('click', function()
 {
-    window.scrollTo({top: 850, behavior: "smooth"});
+    window.scrollTo({top: scrollAmountAbout, behavior: "smooth"});
 })
 
 document.getElementById('scrollProject').addEventListener('click', function()
 {
-    window.scrollTo({top: 1800, behavior: "smooth"});
+    window.scrollTo({top: scrollAmountProject, behavior: "smooth"});
 })
 
 document.getElementById('scrollContact').addEventListener('click', function()
