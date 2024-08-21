@@ -29,6 +29,14 @@
     /* contato */
     --bg-contact: white;
     --txt-contact: black;
+
+    /* icones header */
+    --gamma-letter: none;
+    --github-header: none;
+
+    /* icones contato*/
+    --email-icon: none;
+    --whatsapp-icon: none;
 }
 
 body
@@ -73,6 +81,12 @@ body.dark header {
 {
     height: 5vh;
     cursor: pointer;
+    filter: var(--gamma-letter);
+}
+
+body.dark #gamma 
+{
+    --gamma-letter: invert(100%);
 }
 
 header img
@@ -111,6 +125,16 @@ header img
 {
     width: 90vh;
     text-align: right;
+}
+
+#github
+{
+    filter: var(--github-header);
+}
+
+body.dark #github
+{
+    --github-header: invert(100%);
 }
 
 .container
@@ -390,11 +414,23 @@ body.dark .contact
 #whatsapp
 {
     background-image: url(image/whatsapp.png);
+    filter: var(--whatsapp-icon);
 }
 
 #email
 {
     background-image: url(image/mail.png);
+    filter: var(--email-icon);
+}
+
+body.dark #whatsapp
+{
+    --whatsapp-icon: invert(100%);
+}
+
+body.dark #email 
+{
+    --email-icon: invert(100%);
 }
 
 footer
